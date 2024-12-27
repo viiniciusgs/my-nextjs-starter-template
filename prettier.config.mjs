@@ -3,4 +3,4 @@ const prettierConfig = {
   singleQuote: true,
 }
 
-export default prettierConfig;
+export default prettierConfig
