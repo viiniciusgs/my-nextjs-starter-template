@@ -1,4 +1,4 @@
-const prettierConfig = {
+const config = {
   semi: false,
   singleQuote: true,
   plugins: [
@@ -11,4 +11,4 @@ const prettierConfig = {
   importOrderGroupNamespaceSpecifiers: true,
 }
 
-export default prettierConfig
+export default config
