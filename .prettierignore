@@ -2,3 +2,9 @@
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# dependencies
+.husky/
+
+# static assets
+public/
