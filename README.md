@@ -1,8 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starter Template
+
+## Overview
+
+This is a Next.js starter template designed for developers who value consistency and maintainability in their projects. With robust rules to enforce code style, this template ensures that your codebase remains clean, readable, and easy to scale.
+
+## Features
+
+- **Code Style Enforcement**: Strong linting and formatting rules powered by ESLint and Prettier.
+- **TypeScript Ready**: Built-in support for TypeScript to ensure type safety.
+- **Best Practices**: Pre-configured settings to align with industry standards.
+- **Optimized Workflow**: Includes Husky and lint-staged for pre-commit checks.
+- **Commit Message Linting**: Enforce conventional commits with Commitlint.
+- **Tailwind CSS Integration**: Pre-configured with Tailwind CSS for rapid UI development.
+- **Customizable**: Easily extend or modify configurations to suit your needs.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js 18.18](https://nodejs.org/pt) or later
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/viiniciusgs/nextjs-starter-template.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd nextjs-starter-template
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+### Development Server
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +49,75 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the project for production:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Linting and Formatting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Run the linter:
+  ```bash
+  npm run lint
+  # or
+  yarn lint
+  # or
+  pnpm lint
+  ```
+- Format code with Prettier:
+  ```bash
+  npm run format
+  # or
+  yarn run format
+  # or
+  pnpm format
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Pre-commit Hooks
 
-## Deploy on Vercel
+This template uses Husky and lint-staged to ensure code quality:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Lint and format your code before committing.
+- Automatically rejects commits with code style violations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Folder Structure
+
+```
+nextjs-starter-template/
+├── public/                   # Static assets
+├── src/                      # Source code
+│   ├── components/           # Reusable components
+│   ├── app/                  # Next.js pages
+│   ├── styles/               # Global styles
+├── eslint.config.mjs         # ESLint configuration
+├── prettier.config.mjs       # Prettier configuration
+├── package.json              # Dependencies and scripts
+└── tsconfig.json             # TypeScript configuration
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+### Guidelines
+
+- Follow the existing code style and conventions.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy coding! If you have any questions or suggestions, feel free to open an issue.
